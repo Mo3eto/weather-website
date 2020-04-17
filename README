@@ -10,13 +10,17 @@
 //git add file/folderName
 //git commit -m "Message" -> add tracked files to the repo with a specific comment/message
 
+//gitbash recommended
 // ssh-keygen -t rsa -b 4096 -C "moatasemsalama954@yahoo.com"
 // ls -a -l ~/.ssh
 //eval $(ssh-agent -s)
 //ssh-add -K ~/.ssh/id_rsa
-//cat ~/.ssh/id_rsa.pub -> to get SSH key
+//cat ~/.ssh/id_rsa.pub -> to get SSH key and put it to github
 
 //git remote add origin git@github.com:Mo3eto/weather-website.git -> connect local repo 'on the device' with online repo
 //git push -u origin master
 //
 //ssh -T git@github.com -> to test connection with github
+
+//heroku keys:add -> add SSH key to heroku 
+//heroku create moa-weather-website 
