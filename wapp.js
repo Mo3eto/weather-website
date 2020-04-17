@@ -39,6 +39,9 @@ else {
 //git --version
 //git init -> make .git folder 
 //git status -> show the status of the project ' what is untracked, tracked, committed 
+//git add . -> add everyThing to be tracked  ; add to staged area to be able to commit it
+//git add file/folderName
+//git commit -m "Message" -> add tracked files to the repo with a specific comment/message
 
 
 
