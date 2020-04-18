@@ -11,6 +11,18 @@ weatherForm.addEventListener('submit', (e) => {
 
     const location = search.value
 
+function capital_letter(str) 
+{
+    str = str.split(" ");
+
+    for (var i = 0, x = str.length; i < x; i++) {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(" ");
+}
+capital_letter(location)
+
     messageOne.textContent = 'Loading ...'
     messageTwo.textContent = ''
     messageThree.textContent = ''

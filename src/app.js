@@ -6,6 +6,7 @@ const hbs = require('hbs')
 const request = require('request')
 const gc = require('./utils/geocode')
 const fc = require('./utils/forecast')
+const co = require('./utils/corona')
 
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -55,7 +56,30 @@ app.get('/weather', (req, res) => {
     
 })
 
+app.get('/corona', (req, res) => {
+    if(!req.query.country)
+    {
+        return res.send(
+            {
+                Error: "Country Is Required"
+            } )
+    }
 
+    co.getCorona(req.query.country, (error, coronaData,len) => {
+        if(error) {
+            return res.send( {error }) 
+        }
+        else { 
+            res.send( {
+
+            beforeLast: coronaData[len-2],
+            last: coronaData[len-1]
+            })
+         }
+    })
+    
+
+})
 
 
 

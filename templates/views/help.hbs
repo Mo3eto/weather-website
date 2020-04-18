@@ -14,6 +14,14 @@
         <p>{{helpText}}</p>
     </div>
     
+    <div id='country'></div>
+
+<script src="https://unpkg.com/covid-charts/index.js"></script>
+<script>
+  createChart(document.querySelector("#country"), { country: "Egypt" });
+</script>
+
+
     {{>footer}}
 </body>
 
