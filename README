@@ -25,3 +25,6 @@
 
 //heroku keys:add -> add SSH key to heroku 
 //heroku create moa-weather-website 
+
+
+//C:\Users\moastem\mongodb\bin\mongod.exe --dbpath="F:\NodeProjects\mongodb-data"
