@@ -25,6 +25,9 @@
 
 //heroku keys:add -> add SSH key to heroku 
 //heroku create moa-weather-website 
+//heroku config:set key=value -> to setup your env variables
+//heroku config:unset key
+//git push heroku master -> to deploy the code to heroku server
 
 
 //C:\Users\moastem\mongodb\bin\mongod.exe --dbpath="F:\NodeProjects\mongodb-data"
